@@ -12,11 +12,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         acBtn.setOnClickListener {
-            startActivity(Intent(this, AcelerometerActivity::class.java))
+            startActivity(Intent(this, AccelerometerActivity::class.java))
         }
 
         gyBtn.setOnClickListener {
             startActivity(Intent(this, GyroscopeActivity::class.java))
+        }
+
+        prBtn.setOnClickListener {
+            startActivity(Intent(this, ProximityActivity::class.java))
         }
     }
 }
