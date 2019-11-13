@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, AccelerometerActivity::class.java))
         }
 
+        luBtn.setOnClickListener {
+            startActivity(Intent(this, LightnessActivity::class.java))
+        }
+
         gyBtn.setOnClickListener {
             startActivity(Intent(this, GyroscopeActivity::class.java))
         }
